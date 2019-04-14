@@ -37,7 +37,7 @@ getAPIStr <- function(cmd, version=1.1) {
   return(str)
 }
 
-buildCommonArgs <- function(lang=NULL, since=NULL, until=NULL, locale=NULL,
+buildCommonArgs <- function(lang=NULL, fromDate=NULL, toDate=NULL, locale=NULL,
                             geocode=NULL, since_id=NULL, max_id=NULL,
                             result_type=NULL, lat=NULL, long=NULL, place_id=NULL,
                             display_coordinates=NULL,
