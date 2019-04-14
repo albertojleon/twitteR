@@ -31,13 +31,13 @@ decode_short_url <- function(url, ...) {
 }
 
 getAPIStr <- function(cmd, version=1.1) {
-  #paste("https://api.twitter.com/", version, '/', cmd, '.json', sep='')
-  str<-paste("https://api.twitter.com/1.1/tweets/search/30day/dev.json",sep='')
-  message(str)
-  return(str)
+  paste("https://api.twitter.com/", version, '/', cmd, '.json', sep='')
+  #str<-paste("https://api.twitter.com/1.1/tweets/search/30day/dev.json",sep='')
+  #message(str)
+  #return(str)
 }
 
-buildCommonArgs <- function(lang=NULL, fromDate=NULL, toDate=NULL, locale=NULL,
+buildCommonArgs <- function(lang=NULL, since=NULL, until=NULL, locale=NULL,
                             geocode=NULL, since_id=NULL, max_id=NULL,
                             result_type=NULL, lat=NULL, long=NULL, place_id=NULL,
                             display_coordinates=NULL,
