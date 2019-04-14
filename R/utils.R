@@ -31,7 +31,8 @@ decode_short_url <- function(url, ...) {
 }
 
 getAPIStr <- function(cmd, version=1.1) {
-  paste("https://api.twitter.com/", version, '/', cmd, '.json', sep='')
+  #paste("https://api.twitter.com/", version, '/', cmd, '.json', sep='')
+  return("https://api.twitter.com/1.1/tweets/search/30day/dev.json")
 }
 
 buildCommonArgs <- function(lang=NULL, since=NULL, until=NULL, locale=NULL,
